@@ -2,10 +2,7 @@ package welfare.welfare;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import welfare.welfare.commands.*;
-import welfare.welfare.event.CilckGui;
-import welfare.welfare.event.GithubGui;
-import welfare.welfare.event.killgui;
-import welfare.welfare.event.musicgui;
+import welfare.welfare.event.*;
 
 import java.util.Objects;
 // Licensed to the Apache Software Foundation (ASF) under one or more
@@ -34,6 +31,7 @@ public final class Welfare extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new musicgui(),this);
         getServer().getPluginManager().registerEvents(new killgui(),this);
         getServer().getPluginManager().registerEvents(new GithubGui(),this);
+        getServer().getPluginManager().registerEvents(new verGui(),this);
         //添加命令
         Objects.requireNonNull(getCommand("welbf")).setExecutor(new bf());
         Objects.requireNonNull(getCommand("welver")).setExecutor(new version());
@@ -48,6 +46,5 @@ public final class Welfare extends JavaPlugin {
     @Override
     public void onDisable() {
         // 卸载插件
-
     }
 }

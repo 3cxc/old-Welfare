@@ -50,12 +50,22 @@ public class weiguihub {
         //Github
         ItemStack zgui_Git_item = new ItemStack(Material.CRAFTING_TABLE);
         ItemMeta zgui_Git_item_meta = zgui_Git_item.getItemMeta();
-        Objects.requireNonNull(zgui_Git_item_meta).setDisplayName(ChatColor.RED+"我们的Github");
+        Objects.requireNonNull(zgui_Git_item_meta).setDisplayName(ChatColor.AQUA+"我们的Github");
         ArrayList<String> zgui_Git_item_lore = new ArrayList<>();
         zgui_Git_item_lore.add(ChatColor.AQUA+"想要告诉我们插件的问题？");
-        zgui_404_item_lore.add(ChatColor.AQUA+"点我访问Github来提出建议吧！");
+        zgui_Git_item_lore.add(ChatColor.AQUA+"点我访问Github来提出建议吧！");
         zgui_Git_item_meta.setLore(zgui_Git_item_lore);
         zgui_Git_item.setItemMeta(zgui_Git_item_meta);
+
+        //版本
+        ItemStack zgui_ver_item = new ItemStack(Material.ENDER_CHEST);
+        ItemMeta zgui_ver_item_meta = zgui_ver_item.getItemMeta();
+        Objects.requireNonNull(zgui_ver_item_meta).setDisplayName(ChatColor.AQUA+"插件版本");
+        ArrayList<String> zgui_ver_item_lore = new ArrayList<>();
+        zgui_ver_item_lore.add(ChatColor.AQUA+"插件当前版本：6.3");
+        zgui_ver_item_lore.add(ChatColor.AQUA+"点我查看更新日志");
+        zgui_ver_item_meta.setLore(zgui_ver_item_lore);
+        zgui_ver_item.setItemMeta(zgui_ver_item_meta);
 
         //
 
@@ -64,6 +74,7 @@ public class weiguihub {
         welgui.setItem(1,zgui_music_item);
         welgui.setItem(2,zgui_404_item);
         welgui.setItem(3,zgui_Git_item);
+        welgui.setItem(4,zgui_Git_item);
 
         //打开物品栏
         player.openInventory(welgui);

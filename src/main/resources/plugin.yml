@@ -1,5 +1,5 @@
 name: Welfare
-version: 6.2
+version: 6.3
 main: welfare.welfare.Welfare
 api-version: 1.17
 authors: [ 3cxc ]
