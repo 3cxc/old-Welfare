@@ -74,7 +74,7 @@ public class weiguihub {
         welgui.setItem(1,zgui_music_item);
         welgui.setItem(2,zgui_404_item);
         welgui.setItem(3,zgui_Git_item);
-        welgui.setItem(4,zgui_Git_item);
+        welgui.setItem(4,zgui_ver_item);
 
         //打开物品栏
         player.openInventory(welgui);
