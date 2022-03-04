@@ -26,7 +26,7 @@ public class bfnewGui implements Listener {
             } catch (NullPointerException ignored) {//防止Null报错
 
             }
-        }else if (event.getView().getTitle().equalsIgnoreCase(ChatColor.AQUA+"你确认吗？")) {//新 福利 确认菜单
+        }else if (event.getView().getTitle().equalsIgnoreCase(ChatColor.AQUA+"你确认要得到煤块吗？")) {//新 福利 确认菜单
             event.setCancelled(true);
             try {
                 Player player = (Player) event.getWhoClicked();
