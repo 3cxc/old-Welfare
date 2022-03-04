@@ -12,7 +12,8 @@ public class welhelp implements CommandExecutor {
         if (sender instanceof Player){
             Player player = (Player) sender;
             player.sendMessage(ChatColor.AQUA + "Welfare：命令帮助界面");
-            player.sendMessage(ChatColor.AQUA + " welbf：获得福利" );
+            player.sendMessage(ChatColor.AQUA + "welbfo：获得福利(旧版)" );
+            player.sendMessage(ChatColor.AQUA + "welbfn：获得福利(新版)" );
             player.sendMessage(ChatColor.AQUA + "welver：检查插件版本");
             player.sendMessage(ChatColor.AQUA + "welgui：打开插件功能菜单");
             player.sendMessage(ChatColor.AQUA + "welmusic：获得音乐材质包");
@@ -22,7 +23,8 @@ public class welhelp implements CommandExecutor {
             player.sendMessage(ChatColor.RED + "注：部分命令可在功能菜单里运行");
         }else {
             System.out.println(ChatColor.AQUA + "Welfare 命令帮助界面");
-            System.out.println(ChatColor.AQUA + "welbf：获得福利");
+            System.out.println(ChatColor.AQUA + "welbfo：获得福利(旧版)");
+            System.out.println(ChatColor.AQUA + "welbfn：获得福利(新版)");
             System.out.println(ChatColor.AQUA + "welver：检查插件版本");
             System.out.println(ChatColor.AQUA + "welgui：打开插件功能菜单");
             System.out.println(ChatColor.AQUA + "welmusic：获得音乐材质包");

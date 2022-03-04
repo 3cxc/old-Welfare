@@ -1,12 +1,14 @@
 name: Welfare
-version: 6.3
+version: 6.4
 main: welfare.welfare.Welfare
 api-version: 1.17
 authors: [ 3cxc ]
 description: 一个轻量级的Minecraft 1.17.1福利插件
 commands:
-  welbf:
-    description: 获得福利
+  welbfo:
+    description: 获得福利(旧)
+  welbfn:
+    description: 获得福利(新)
   welver:
     description: 检查版本
   welgui:

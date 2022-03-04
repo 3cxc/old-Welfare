@@ -27,13 +27,14 @@ public final class Welfare extends JavaPlugin {
         // 启动插件
 
         // 添加事件
-        getServer().getPluginManager().registerEvents(new CilckGui(),this);
+        getServer().getPluginManager().registerEvents(new bfoldGui(),this);
+        getServer().getPluginManager().registerEvents(new bfnewGui(),this);
         getServer().getPluginManager().registerEvents(new musicgui(),this);
         getServer().getPluginManager().registerEvents(new killgui(),this);
         getServer().getPluginManager().registerEvents(new GithubGui(),this);
         getServer().getPluginManager().registerEvents(new verGui(),this);
         //添加命令
-        Objects.requireNonNull(getCommand("welbf")).setExecutor(new bf());
+        Objects.requireNonNull(getCommand("welbfo")).setExecutor(new bfold());
         Objects.requireNonNull(getCommand("welver")).setExecutor(new version());
         Objects.requireNonNull(getCommand("welgui")).setExecutor(new playergui());
         Objects.requireNonNull(getCommand("welmusic")).setExecutor(new welmusic());
@@ -41,6 +42,7 @@ public final class Welfare extends JavaPlugin {
         Objects.requireNonNull(getCommand("wel404")).setExecutor(new wel404());
         Objects.requireNonNull(getCommand("welkill")).setExecutor(new wel404());
         Objects.requireNonNull(getCommand("welGithub")).setExecutor(new Github());
+        Objects.requireNonNull(getCommand("welbfn")).setExecutor(new bfnew());
     }
 
     @Override
