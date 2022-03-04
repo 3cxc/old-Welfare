@@ -37,6 +37,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2565oSLtkgjeN2SGvOXghoz9QSh" />
@@ -154,6 +155,7 @@
       <workItem from="1645859054026" duration="3191000" />
       <workItem from="1645967628077" duration="1062000" />
       <workItem from="1646140223052" duration="23072000" />
+      <workItem from="1646371486325" duration="8617000" />
     </task>
     <servers />
   </component>
