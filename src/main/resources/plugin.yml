@@ -1,9 +1,9 @@
 name: Welfare
-version: 6.4
-main: welfare.welfare.Welfare
+version: '${project.version}'
+main: nc.umtpcm.welfare.Welfare
 api-version: 1.17
 authors: [ 3cxc ]
-description: 一个轻量级的Minecraft 1.17.1福利插件
+description: 一个轻量级的福利插件！
 commands:
   welbfo:
     description: 获得福利(旧)
